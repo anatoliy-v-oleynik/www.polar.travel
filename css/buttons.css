@@ -1,0 +1,200 @@
+
+
+/* --------------------------------------- */
+/* Pulse Button
+ * --------------------------------------- */
+
+.pulse-button {
+  content: "";
+  outline: none;
+  position:relative;
+  display: block;
+  width:100px;
+  height:100px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color:#fff;
+  text-shadow:0 1px 0 #1f4c76;
+  border: none;
+  box-shadow:0 0 0 0 rgba(255, 255, 255, 0.5), inset 0 0px 0 #abcbe9;
+  border-radius:100%;
+  v-align:middle;
+  background: radial-gradient(rgba(255, 255, 255, 0.20) 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  cursor:pointer;
+  -webkit-animation: pulse-btn-shadow 1s infinite cubic-bezier(0.6, 0, 0, 1)
+}
+
+.pulse-button:hover {
+  background: radial-gradient(rgba(255, 255, 255, 0.50) 50%, rgba(101, 111, 150, 0.25) 52%);
+}
+
+.pulse-button::after {
+  content: '';
+  position:relative;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.pulse-button:before {
+  outline: none;
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulse-btn 2s;
+  animation: pulse-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulse-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse-btn-shadow {
+to {
+  box-shadow:0 0 0 15px rgba(90, 153, 220, 0), inset 0 0px 0 #abcbe9}
+}
+
+
+/* --------------------------------------- */
+/* Primary Button                          */
+/* --------------------------------------- */
+
+ .primary-btn {
+  line-height: 40px;
+  padding: 0 15px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #00ff8c;
+  color: #222222;
+  display: inline-block;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.primary-btn:focus {
+  outline: none;
+}
+
+.primary-btn:hover {
+  background: #00ff8c;
+  color: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+}
+
+
+/* --------------------------------------- */
+/* Primary Button                          */
+/* --------------------------------------- */
+
+
+.btn.btn-primary {
+  border-radius: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-outline-lg {
+  display: inline-block;
+  padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+  border: 0.125rem solid #fff;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #fff;
+  font: 700 0.75rem/0 "Raleway", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+  background-color: #fff;
+  color: #cc1616;
+  text-decoration: none;
+}
+
+
+.btn-solid-lg {
+  border-radius: 2rem;
+  background: #cc1616;
+  display: inline-block;
+  padding: 10px 40px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+  border-style: none;
+}
+
+.btn-solid-lg:hover {
+  background: #e82d2d;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-gradient-lg {
+  display: inline-block;
+  padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+  border: 0.5px solid #0072e0;
+  border-radius: 2rem;
+  background: linear-gradient(to bottom, #00acee, #0072e0);
+  color: #fff;
+  font: 700 0.75rem/0 "Raleway", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+.btn-gradient-lg:hover {
+  background: linear-gradient(to bottom, #0189bd, #0056aa);
+  color: #fff;
+  text-decoration: none;
+}

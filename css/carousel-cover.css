@@ -1,0 +1,44 @@
+
+.carousel-fade .carousel-inner .carousel-item {
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .carousel-item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-bg .carousel-inner .carousel-item {
+	background-color: darkslategrey;
+	background-size: cover;
+	background-position: center;
+	min-height: 150px;
+}

@@ -1,0 +1,102 @@
+@CHARSET "ISO-8859-1";
+
+.tour-item {
+  height: 100%;
+  position: relative;
+}
+
+.tour-item .line {
+  margin: 10px 0 15px 0;
+  width: 30%;
+  height: 2px;
+  background: #fff;
+}
+
+.tour-item .content h1 {
+  text-transform: uppercase;
+  color: #fff;
+  transform: translateY(0px);
+  transition: .5s ease-in-out;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.7);
+}
+
+.tour-item:hover .content h1 {
+  transform: translateY(-20px);
+}
+
+.tour-item .content h2 {
+  color: #fff;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: .5s ease-in-out;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.7);
+  margin: 0;
+}
+
+.tour-item:hover .content h2 {
+  transform: translateY(-20px);
+}
+
+.tour-item .content h3 {
+  color: #fff;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: .5s ease-in-out;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.7);
+  margin: 0;
+}
+
+.tour-item:hover .content h3 {
+  transform: translateY(-20px);
+}
+
+.tour-item .overlay-bg {
+  background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.70) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.70) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.70) 0%, rgba(91, 97, 207, 0.95) 100%);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+}
+
+.tour-item:hover .overlay-bg {
+  opacity: 1;
+}
+
+.tour-item .content .btn-group {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: .5s ease-in-out;
+  max-height: 0;
+}
+
+.tour-item:hover .content .btn-group {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.tour-item .content .btn-group button {
+  font-size: 30px;
+  display: inline-block;
+  background: rgba(60, 64, 143, 0.80);
+  color: #fff;
+  line-height: 1;
+  padding: 0px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  border-style: none;
+}
+
+.tour-item .content .btn-group button:hover {
+  background: #cc1616;
+  color: #fff;
+  text-decoration: none;
+}

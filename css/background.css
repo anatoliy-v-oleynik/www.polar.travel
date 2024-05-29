@@ -1,0 +1,134 @@
+.featured {
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.clear-sky {
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.playing-reds {
+  background: #D31027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EA384D, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nelson {
+	background: #f2709c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dirty-fog {
+	background: #B993D6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-overlay {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.fp-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+}
+
+
+        #slide1-1 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-1-1.jpg');
+            background-position: center 80%;
+        }
+
+
+.overlay-bg1_1 {
+    background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.70) 0%, rgba(91, 97, 207, 0.50) 100%);
+    background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.70) 0%, rgba(91, 97, 207, 0.50) 100%);
+    background: linear-gradient(to right, rgba(60, 64, 143, 0.70) 0%, rgba(91, 97, 207, 0.50) 100%);
+}
+
+.overlay-bg1_2 {
+    background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.90) 0%, rgba(91, 97, 207, 0.70) 100%);
+    background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.90) 0%, rgba(91, 97, 207, 0.70) 100%);
+    background: linear-gradient(to right, rgba(60, 64, 143, 0.90) 0%, rgba(91, 97, 207, 0.70) 100%);
+}
+
+.overlay-bg3 {
+    background: -moz-linear-gradient(left, rgba(100, 179, 244, 0.50) 0%, rgba(55, 183, 33, 0.30) 100%);
+    background: -webkit-linear-gradient(left, rgba(100, 179, 244, 0.50) 0%, rgba(55, 183, 33, 0.30) 100%);
+    background: linear-gradient(to right, rgba(100, 179, 244, 0.50) 0%, rgba(55, 183, 33, 0.30) 100%);
+}
+
+
+
+.gradient-style-1 {
+ background: #e62f17;
+ background: -webkit-linear-gradient(45deg, #e62f17 0%, #f2ba30 100%);
+ background: linear-gradient(45deg, #e62f17 0%, #f2ba30 100%);
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e62f17', endColorstr='#f2ba30', GradientType=1);
+}
+.gradient-style-2 {
+ background: #0a3466;
+ background: -webkit-linear-gradient(45deg, #0a3466 0%, #17b6e3 100%);
+ background: linear-gradient(45deg, #0a3466 0%, #17b6e3 100%);
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0a3466', endColorstr='#17b6e3', GradientType=1);
+}
+.gradient-style-3 {
+ background: #18b9e5;
+ background: -webkit-linear-gradient(45deg, #18b9e5 0%, #81d9b8 100%);
+ background: linear-gradient(45deg, #18b9e5 0%, #81d9b8 100%);
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#18b9e5', endColorstr='#81d9b8', GradientType=1);
+}
+
+
+.wave{
+  background: linear-gradient(to right, sandybrown, chocolate);
+  height: 70px;
+  position: relative;
+}
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, aquamarine 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, aquamarine 12px, transparent 13px);
+}

@@ -1,0 +1,117 @@
+@CHARSET "ISO-8859-1";
+
+@import url('common.css');
+@import url('fonts.css');
+@import url('normalize.css');
+@import url('topbar.css');
+@import url('tour-item.css');
+@import url('navbar.css');
+@import url('header.css');
+@import url('background.css');
+@import url('buttons.css');
+@import url('hint.css');
+@import url('rotating-card.css');
+@import url('carousel-cover.css');
+@import url('contact-form.css');
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body {
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+  font-size: 16px;
+}
+
+h1 {
+  font: 700 5rem/5rem "Yanone Kaffeesatz", sans-serif;
+}
+
+h1 small {
+  font: 300 3rem/3.2rem "Yanone Kaffeesatz", sans-serif;
+}
+
+
+h2 {
+  font: 700 3rem/3.2rem "Yanone Kaffeesatz", sans-serif;
+}
+
+h2 small {
+  font: 300 2.5rem/2.7rem "Yanone Kaffeesatz", sans-serif;
+}
+
+h3 {
+  font: 700 3rem/3.2rem "Yanone Kaffeesatz", sans-serif;
+}
+
+h3 small {
+  font: 300 1.8rem/2rem "Yanone Kaffeesatz", sans-serif;
+}
+
+h4 {
+  font: 700 1.3rem/1.3rem "Roboto Condensed", sans-serif;
+}
+
+h4 small {
+  font: 700 1rem/1rem "Roboto Condensed", sans-serif;
+}
+
+h5 {
+  font: 700 1.125rem/1.125rem "Roboto Condensed", sans-serif;
+}
+
+h6 {
+  font: 700 0.125rem/1.625rem "Roboto Condensed", sans-serif;
+}
+
+
+a {
+  color: #505c67;
+}
+
+a:hover {
+  color: #505c67;
+}
+
+button:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+
+.wrapper-gallery {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5vmin;
+  justify-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.wrapper-gallery img {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+.wrapper-gallery img:nth-child(3n + 1) {
+  grid-column: 2 / span 2;
+}
+
+.wrapper-gallery img:hover {
+  z-index: 2;
+  -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
